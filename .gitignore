@@ -5,8 +5,8 @@ tsconfig.json
 index.html
 
 # Ignore compiled files
-dist/
-src/
+./dist/
+./src/
 
 # Dependencies
 node_modules/
