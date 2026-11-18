@@ -1,0 +1,3 @@
+### 1. What are the core differences between `type` aliases and `interface` in TypeScript? When should you choose one over the other?
+
+Both `type` and `interface` are used to define the structure of data in TypeScript. The main difference is that `type` can define objects, unions, and primitive types, while `interface` is mainly used to define object structures. An `interface` can be extended or reopened to add new properties, but a `type` cannot be reopened. I usually use `interface` for defining object structures and `type` for unions and more complex types.
