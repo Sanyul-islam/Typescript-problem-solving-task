@@ -1,3 +1,35 @@
-### 1. What is Type Narrowing in TypeScript?
+What is Type Narrowing in TypeScript?
 
-Type Narrowing in TypeScript means checking the type of a variable so TypeScript can understand exactly what type of value it is. It helps us use variables safely without getting type errors. We can use `typeof`, `instanceof`, and the `in` operator for type narrowing. For example, `typeof` checks basic types like string, number, and boolean (`typeof value === "string"`). `instanceof` checks whether an object belongs to a particular class (`value instanceof Date`). The `in` operator checks whether a specific property exists in an object (`"email" in user`). These operators help TypeScript understand the correct type of a variable and write safer code.
+Introduction:
+
+Type Narrowing means checking the type of a variable so TypeScript can understand its exact type. It helps prevent errors and makes code safer.
+
+Detailed Explanation
+TypeScript provides different ways to narrow types.
+
+1. Using typeof: Checks basic types like string and number.
+  
+  function showValue(value: string | number) {
+  if (typeof value === "string") {
+    console.log(value.toUpperCase());
+  } else {
+    console.log(value.toFixed(2));
+  }
+}
+
+2. Using instanceof: Checks whether an object belongs to a class.
+
+    const today = new Date();
+
+    if (today instanceof Date) {
+        console.log(today.getFullYear());
+    }
+
+3. Using in: Checks whether a property exists in an object.
+       if ("email" in user) {
+  console.log(user.email);
+} 
+
+Conclusion:
+
+Type Narrowing helps us write safer and cleaner code by checking variable types before using them.
