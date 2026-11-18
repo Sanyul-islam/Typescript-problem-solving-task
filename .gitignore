@@ -1,0 +1,12 @@
+# Ignore TypeScript config
+tsconfig.json
+
+# Ignore HTML
+index.html
+
+# Ignore compiled files
+dist/
+src/
+
+# Dependencies
+node_modules/
